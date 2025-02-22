@@ -27,11 +27,11 @@ As the detecting agent is aware of the homebase position of the second agent, th
 #### Contact
 The decting agent can contact the second agent. If this action is taken, both agents will be aware of the location of each other's homebase. The contact action is effectively a request for cooperation. The second agent may accept this request in which case both agent's TDS will be set to the higher of the two. These agents will no longer be able to take the Destroy or Broadcast action against one another. Alternatively, the second agent may take the Destroy, Hide, or Broadcast action in responce to being contacted. 
 
-### Observe
+#### Observe
 This action is not fully flushed out yet conceptually. A rough implementation might be that the detecting agent takes the Observe action to monitor the dected agent and respond to the detected agent based on that agent's interaction with a third agent. For example, agent 1 observes agent 2 until agent 2 uses the Destroy action on agent 3, causing agent 1 to take the Destroy action against agent 2. 
 
-### Hide
+#### Hide
 The Hide action becomes available to any agent as soon as they make a detection of any other agent. After an intial detection, the detecting agent may take the Hide action at any time. Taking this action immediately reduces the agent's TDS to 1. All associated attributes are also reduced accordingly. The agent returns to homebase and does not leave. This reflects the purpose of the Hide action which is preservation of the civilizations by giving up all technology and space travel, effectively going dark.
 
-### Broadcast
+#### Broadcast
 An agent may choose to take the Broadcast action at any point in time after an initial detection of another agent. The Broadcast action makes all agents currently active in the model aware of the location of all homebases of which the broadcaster is aware, including its own.
